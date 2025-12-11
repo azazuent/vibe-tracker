@@ -73,6 +73,24 @@ vibe-tracker/
 
 ---
 
+## CI/CD
+
+GitHub Actions workflow in `.github/workflows/test.yml`
+
+**Triggers:**
+- Push to `main`, `dev`
+- Pull requests to `main`, `dev`
+
+**Job: test**
+- Runs on: ubuntu-latest
+- Python 3.12
+- Install dependencies from pyproject.toml (including dev)
+- Run pytest
+
+No deployment — tests only.
+
+---
+
 ## Docker
 
 **Dockerfile:** Python 3.12 slim, install from pyproject.toml, run uvicorn on port 8000
