@@ -18,10 +18,10 @@ Lightweight REST API for task tracking. Prototype — no auth, single-tenant.
 
 Manage via pydantic-settings `Settings` class in `config.py`.
 
-| Variable | Type | Default | Description |
-|----------|------|---------|-------------|
-| database_url | str | postgresql://postgres:postgres@localhost:5432/tasktracker | Connection string |
-| debug | bool | false | Debug mode |
+| Variable | Type | Default                                                   | Description |
+|----------|------|-----------------------------------------------------------|-------------|
+| database_url | str | postgresql://postgres:postgres@localhost:5432/vibetracker | Connection string |
+| debug | bool | false                                                     | Debug mode |
 
 Settings loaded from environment variables with `.env` file support.
 
